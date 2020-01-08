@@ -27,6 +27,7 @@ include ("functions.php");
 
 
         printArr($numbers);
+        largest($numbers);
     ?>
 </body>
 </html>
