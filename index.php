@@ -8,6 +8,8 @@
 //Turn on error reporting -- this is critical!
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
+
+include ("functions.php");
 ?>
 <!doctype html>
 <html lang="en">
@@ -23,11 +25,7 @@ error_reporting(E_ALL);
     <?php
         $numbers = [7, 9, 8, 9, 8, 8, 6];
 
-        function printArr($numbers) {
-            foreach ($numbers as $number) {
-                echo "<p>$number</p>";
-            }
-        }
+
         printArr($numbers);
     ?>
 </body>
