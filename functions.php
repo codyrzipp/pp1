@@ -11,14 +11,12 @@ function largest ($array) {
             $temp = $array[$i];
         }
     }
-
-//    foreach ($array as $number) {
-//        $temp = $array[$number];
-//
-//        if ($temp >= $number) {
-//            $temp = $number;
-//        }
-//        $
         echo "<p>Largest: $temp</p>";
+}
+
+function removeDups ($numbers) {
+    $result = array_unique($numbers);
+    echo"<p>No Dups: </p>";
+    var_dump($result);
 
 }

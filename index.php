@@ -28,6 +28,7 @@ include ("functions.php");
 
         printArr($numbers);
         largest($numbers);
+        removeDups($numbers);
     ?>
 </body>
 </html>
