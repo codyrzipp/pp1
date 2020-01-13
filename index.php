@@ -28,7 +28,10 @@ include ("functions.php");
 
         printArr($numbers);
         largest($numbers);
-        removeDups($numbers);
+        echo"<p>No Dups: </p>";
+        printArr(removeDups($numbers));
+        echo"<p>Distribution: </p>";
+        var_dump(distribution($numbers));
     ?>
 </body>
 </html>

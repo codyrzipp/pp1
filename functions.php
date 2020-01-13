@@ -16,7 +16,23 @@ function largest ($array) {
 
 function removeDups ($numbers) {
     $result = array_unique($numbers);
-    echo"<p>No Dups: </p>";
-    var_dump($result);
+//    var_dump($result);
+
+    return($result);
+
+}
+
+function distribution($arr) {
+   sort($arr);
+    $uniqueArray = removeDups($arr);
+    $associative = array();
+//    var_dump($values);
+    foreach ($uniqueArray as $value) {
+        $associative[$value] = 0;
+    }
+    foreach ($arr as $value) {
+        $associative[$value]++;
+    }
+    return $associative;
 
 }
